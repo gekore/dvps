@@ -14,3 +14,7 @@ pipeline {
 				echo "start building image"
 				dir ('') {
 					sh 'docker build -t .'
+					}
+				}
+			}
+		}
