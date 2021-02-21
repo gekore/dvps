@@ -9,6 +9,12 @@ pipeline {
 		timestamps()
 	}
 	stages {
+		stage("PWD") {
+		steps{
+		echo "PWD"
+		pwd
+		}
+		}
 		stage("create docker image") {
 			steps {
 				echo "start building image"
