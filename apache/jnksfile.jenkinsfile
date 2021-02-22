@@ -13,7 +13,7 @@ pipeline {
 			steps {
 				echo "start building image"
 				dir ('dvps/apache') {
-					sh 'pwd && ls'
+					sh 'docker build .'
 					}
 				}
 			}
